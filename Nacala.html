@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra e Venda Nacala</title>
+    <link rel="stylesheet" href="nacala.css">
+</head>
+<body>
+    <header>
+        <h1>Compra e Venda Nacala</h1>
+    </header>
+
+    <main>
+        <section id="add-product">
+            <h2>Adicionar Produto</h2>
+            <form id="product-form">
+                <input type="text" id="name" placeholder="Nome do Produto" required>
+                <input type="text" id="price" placeholder="Preço" required>
+                <select id="category" required>
+                    <option value="">Escolha a categoria</option>
+              <option value="Alimentos">Alimentos</option>
+                    <option value="Eletrônicos">Eletrônicos</option>
+                    <option value="Roupas">Roupas</option>
+                    <option value="Serviços">Serviços</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <input type="text" id="contact" placeholder="WhatsApp" required>
+                <textarea id="description" placeholder="Descrição"></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section id="search">
+            <h2>Pesquisar Produtos</h2>
+            <input type="text" id="search-input" placeholder="Pesquisar por nome...">
+            <select id="filter-category">
+                <option value="">Todas as categorias</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Eletrônicos">Eletrônicos</option>
+                <option value="Roupas">Roupas</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </section>
+
+        <section id="product-list">
+            <h2>Produtos</h2>
+            <div id="products" class="products-grid"></div>
+        </section>
+    </main>
+
+    <script src="nacala.js"></script>
+</body>
+</html>
